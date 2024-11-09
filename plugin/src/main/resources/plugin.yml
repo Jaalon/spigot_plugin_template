@@ -1,0 +1,17 @@
+main: org.jaalon.spigotmc.TestPlugin
+name: TestPlugin
+version: 0.0.1
+description: A very simple plugin to rule the world !
+api-version: '1.21.1'
+load: POSTWORLD
+authors: [me, you_if_you_modify_things]
+website: www.spigotmc.org
+
+prefix: Testing
+depend:
+softdepend:
+loadbefore:
+commands:
+  diamondsPlease:
+    description: Give Me Diamonds !
+    usage: /diamondsPlease
