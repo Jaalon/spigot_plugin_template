@@ -81,3 +81,12 @@ or more simply use the --rm parameter to delete it when it’s started.
 Example:
 
     docker run --rm -it --name spigot -p 25565:25565 -v D:\work\dev\minecraft\tmp_data:/mnt/server_data spigot:1.21.1
+
+### Debug mode:
+
+Java Remote Debug Mode is activated on port 5005. You can map this port to your computer using the -p parameter. For example:
+
+```shell
+docker run --rm -it --name spigot -p 25565:25565 -p 5005:5005 -v D:\work\dev\minecraft\tmp_data:/mnt/server_data spigot:1.21.1
+```
+
