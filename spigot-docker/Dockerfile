@@ -27,5 +27,6 @@ COPY /conf/eula.txt .
 COPY /conf/server.properties /mnt/server_data/server.properties
 
 EXPOSE 25565
+EXPOSE 5005
 
-ENTRYPOINT ["java","-jar","/opt/spigot/server.jar"]
+ENTRYPOINT ["java", "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005","-jar","/opt/spigot/server.jar"]
